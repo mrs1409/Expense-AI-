@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseTrack - Your Financial Companion</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto px-4">
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center py-6">
+            <div class="flex items-center">
+                <img src="expense_tracker_logo.png" alt="ExpenseTrack Logo" class="h-10 w-10 mr-3">
+                <h1 class="text-2xl font-bold text-blue-600">ExpenseTrack</h1>
+            </div>
+            <div>
+                <button id="login-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                    Login / Sign Up
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="grid md:grid-cols-2 gap-10 items-center py-16">
+            <div>
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-6">
+                    Take Control of Your Finances
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Track, analyze, and understand your spending with our intelligent expense tracking platform.
+                </p>
+                <div class="space-x-4">
+                    <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
+                        Get Started
+                    </button>
+                    <button class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src="expense_tracker_logo.png" alt="Expense Tracking Dashboard" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="py-16 bg-white rounded-lg shadow-md">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800">Features</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 px-8">
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <h4 class="text-xl font-semibold mb-4">SMS Expense Detection</h4>
+                    <p>Automatically track expenses from bank SMS messages</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg text-center">
+                    <h4 class="text-xl font-semibold mb-4">Detailed Categorization</h4>
+                    <p>Organize expenses into multiple customizable categories</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg text-center">
+                    <h4 class="text-xl font-semibold mb-4">Visual Analytics</h4>
+                    <p>Generate insightful charts and monthly reports</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ExpenseTrack. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
